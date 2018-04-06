@@ -31,18 +31,6 @@ namespace CityInfo.API.Controllers
 
             var results = AutoMapper.Mapper.Map<IEnumerable<CitySummary>>(cities);
 
-            //var CitiesViewModels = new List<CitySummary>();
-
-            //foreach (var city in cities)
-            //{
-            //    CitiesViewModels.Add(new CitySummary
-            //    {
-            //        Id = city.Id,
-            //        Name = city.Name,
-            //        Description = city.Description
-            //    });
-            //}
-
             return Ok(results);
         }
 
