@@ -70,8 +70,6 @@ namespace CityInfo.API.Controllers
                     return Ok(cityResult);
                 }
 
-                //var CitySummary = new CitySummary() { Id = city.Id, Name = city.Name, Description = city.Description};
-
                 var CitySummary = AutoMapper.Mapper.Map<CitySummary>(city);
                 return Ok(CitySummary);
             }
