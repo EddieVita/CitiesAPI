@@ -30,7 +30,7 @@ namespace CityInfo.API.Controllers
         {
             _logger = logger;
             _mailService = mailService;
-            _cityRepository = cityRepsitory;
+            _cityRepository = cityRepsitory; 
             //Can use this to request
             //HttpContext.RequestServices.GetService()
         }
