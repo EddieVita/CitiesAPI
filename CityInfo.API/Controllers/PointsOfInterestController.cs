@@ -20,6 +20,12 @@ namespace CityInfo.API.Controllers
         private readonly IMailService _mailService;
         private readonly ICityRepsitory _cityRepository;
 
+        /// <summary>
+        /// This constructor accepts all the interfaces that we need for the API.
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="mailService"></param>
+        /// <param name="cityRepsitory"></param>
         public PointsOfInterestController(ILogger<PointsOfInterestController> logger, IMailService mailService, ICityRepsitory cityRepsitory)
         {
             _logger = logger;
