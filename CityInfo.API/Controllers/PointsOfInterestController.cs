@@ -35,7 +35,6 @@ namespace CityInfo.API.Controllers
             try
             {
                 //var city = MockCitiesRepository.Current.Cities.FirstOrDefault(c => c.Id == cityId);
-                //Screw you Im a baller nigga!!!afasfsdfsfdsfsfsf
 
                 if (!_cityRepository.CityExists(cityId))
                 {
